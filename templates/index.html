@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Iris Prediction</title>
+</head>
+<body>
+    <h1>Iris Flower Prediction</h1>
+    <form id="prediction-form">
+        <label for="sepal_length">Sepal Length:</label>
+        <input type="number" id="sepal_length" name="sepal_length" step="any" required>
+        <label for="sepal_width">Sepal Width:</label>
+        <input type="number" id="sepal_width" name="sepal_width" step="any" required>
+        <label for="petal_length">Petal Length:</label>
+        <input type="number" id="petal_length" name="petal_length" step="any" required>
+        <label for="petal_width">Petal Width:</label>
+        <input type="number" id="petal_width" name="petal_width" step="any" required>
+        <button type="submit">Predict</button>
+    </form>
+    <div id="result"></div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
